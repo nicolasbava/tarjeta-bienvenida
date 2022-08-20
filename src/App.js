@@ -22,6 +22,7 @@ function App() {
       <button onClick={ () => dispatch(decrement()) }>Decrement</button>
       <span> {count} </span>
       <button onClick={ () => dispatch(increment()) }>Increment</button>
+      
     </div>
   );
 }
