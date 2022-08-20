@@ -1,0 +1,7 @@
+div .card {
+    width: 40vw;
+    border: 1px solid grey;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 auto 20vh;
+    
+}
