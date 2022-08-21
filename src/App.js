@@ -9,14 +9,9 @@ import CardFlip from './components/card-flip/CardFlip';
 
 function App() {
 
-  const count = useSelector( ( state ) =>  state.counter.value)
-  console.log('count:',count)
-
-  let dispatch = useDispatch()
-
-  return (
+   return (
     <div className="App">
-      <h1>Tarjeta de Bienvenida</h1>
+      <h1 data-testid='test-h1'>Tarjeta de Bienvenida</h1>
       <div className='app__flex' >
         <Form />
         <CardFlip />

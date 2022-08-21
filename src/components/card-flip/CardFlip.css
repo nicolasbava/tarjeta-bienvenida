@@ -14,11 +14,13 @@
 
   
   .card {
-    margin: 100px auto 0;
+    margin: 0 auto 0;
+    margin-top: min(50px);
     width: 350px;
     height: 550px;
     perspective: 1000px;
   }
+  
   
   .card__inner {
     width: 100%;
@@ -46,10 +48,12 @@
   }
   
   .card__face--front {
+
     background-image: linear-gradient(to bottom left, var(--primary), var(--secondary));
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     transform: rotateY(180deg);
   }
 
@@ -57,9 +61,14 @@
     color: #FFF;
     font-size: 32px;
   }
+
+  .card__face--front img {
+    margin-top: -40px;
+  }
   
   .card__face--back {
     background-color: var(--light);
+    /* transform: rotateY(180deg); */
 
   }
   
@@ -71,11 +80,21 @@
   
   .card__header {
     position: relative;
-    padding: 30px 30px 40px;
+    padding: 15px 30px 40px;
     z-index: 99;
   }
 
-  .card__header--point {
+  .card__header--point-front {
+    /* margin: auto; */
+    background: #FFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+  }
+
+  .card__header--point-back {
     margin: auto;
     background: #FFF;
     width: 10px;
@@ -140,5 +159,9 @@
     justify-content: space-around;
     align-items: center;
     margin-top: -50px;
+  }
+
+  .card {
+    margin-top: 200px;
   }
 }

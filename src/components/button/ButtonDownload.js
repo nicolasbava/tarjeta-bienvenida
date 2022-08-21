@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
-
+import './ButtonDownload.css'
 import downloadjs from 'downloadjs';
 import html2canvas from 'html2canvas';
 
@@ -21,6 +21,9 @@ const ButtonDownload = () => {
     return (
         <div>
             <button onClick={handleCaptureClick}> Descargar Tarjeta </button>
+            {/* <button class="button button--bestia">
+                <div class="button__bg"></div><span>Locate</span>
+            </button> */}
         </div>
     );
 }

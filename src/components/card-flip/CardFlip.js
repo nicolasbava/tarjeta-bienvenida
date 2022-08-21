@@ -33,16 +33,18 @@ const CardFlip = () => {
     
 
     return (
-        <div>
+
             <div className="card" >
 		        <div className="card__inner">
                     <div className="card__face card__face--front" >
+                        <div className="card__header--point-front"></div>
+                        <img src='/img/these-logo.jpg' alt="" className="pp" />
                         <h2>THESE</h2>
                     </div>
                     <div className="card__face card__face--back" >
                         <div id='card__download' className="card__content" >
                             <div className="card__header">
-                                <div className="card__header--point"></div>
+                                <div className="card__header--point-back"></div>
                                 <img src={img} alt="" className="pp" />
                                 <h2>{name}</h2>
                             </div>
@@ -54,8 +56,12 @@ const CardFlip = () => {
                     </div>
                 </div>
             </div>
-        </div>
+
     );
 }
 
 export default CardFlip;
+
+/*
+
+                    */

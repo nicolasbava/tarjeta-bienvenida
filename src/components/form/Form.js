@@ -26,7 +26,7 @@ const Form = () => {
         <form className='form' id='form'>
             {/* IMAGEN */}
             <label for='img'>Imagen:</label>
-            <input  ref={img} name='img' onChange={handleChange} type='file'></input>
+            <input className='custom-file-input'  ref={img} name='img' onChange={handleChange} type='file'></input>
             {/* NOMBRE */}
             <label for='name'>Nombre:</label>
             <input className='form__input' ref={name} onChange={()=> dispatch(setName(name.current.value))} type='text' name='name' placeholder='Inserte su nombre...'></input>

@@ -3,6 +3,9 @@ body {
   font-family: montserrat, sans-serif;
   width: 100%;
   min-height: 100vh;
+  color: white;
+  background-image: linear-gradient(to left, rgb(0 203 229 / 58%), #03bf8c);
+  font-family: 'Poppins', sans-serif; 
 }
 
 .App {
@@ -10,7 +13,17 @@ body {
 }
 
 .App h1 {
-  padding-top: 50px;
+  padding-top: 1px;
+  position: absolute;
+  top: 0;
+  left: 9px;
+  /* margin-top: -72px; */
+  opacity: 0.5;
+  font-size: 74px;
+  word-spacing: 11px;
+  letter-spacing: 4px;
+  text-align: left;
+  line-height: 1;
 }
 
 .app__flex {
@@ -21,12 +34,24 @@ body {
 }
 
 @media (min-width: 756px) {
+
+  .App h1 {
+    padding-top: 0px;
+    position: absolute;
+    top: 0;
+    left: 9px;
+    /* margin-top: -72px; */
+    opacity: 0.5;
+    font-size: 74px;
+    word-spacing: 11px;
+    letter-spacing: 4px;
+  }
   
   .app__flex {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: -50px;
+    /* margin-top: -50px; */
   }
 }
 
