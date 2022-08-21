@@ -12,7 +12,7 @@ const Card = () => {
     const text = useSelector( ( state ) =>  state.counter.text)
 
     return (
-        <div className='card'>
+        <div className='card' >
             <img src={img} width='300' height='300'/>
             <h3>{name}</h3>
             <p>{text}</p>

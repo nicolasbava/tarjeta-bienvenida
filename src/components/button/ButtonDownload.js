@@ -8,12 +8,12 @@ const ButtonDownload = () => {
     let card
 
     useEffect(() => {
-        card = document.querySelector('.card')
+        card = document.querySelector('#card__download')
     }, []);
     
     // funcion que descarga la tarjeta
     const handleCaptureClick = useCallback(async () => {
-        const canvas = await html2canvas(document.body);
+        const canvas = await html2canvas(card);
         const dataURL = canvas.toDataURL('image/png');
         downloadjs(dataURL, 'card.png', 'image/png');
     }, []);

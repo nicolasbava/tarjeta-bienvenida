@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './form.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { setName, setText, setImage } from '../../toolkit/reducer'
+import { setName, setCharge, setText, setImage } from '../../toolkit/reducer'
 
 const Form = () => {
 
@@ -10,6 +10,7 @@ const Form = () => {
 
     let img = useRef()
     let name = useRef()
+    let charge = useRef()
     let text = useRef()
     
     useEffect(() => {
@@ -22,18 +23,20 @@ const Form = () => {
     }
 
     return (
-        <form id='form'>
-            <input ref={img} onChange={handleChange} type='file'></input>
-            <input onChange={()=> dispatch(setName(name.current.value))} ref={name} type='text' name='name' placeholder='Inserte su nombre...'></input>
-            <textarea ref={text} onChange={()=> dispatch(setText(text.current.value))} placeholder='Inserte el texto...'></textarea>
-            {/* <img src={file} ></img> */}
-            {/* <p 
-                onClick={ ()=> {
-                    dispatch(setImage(img))
-                    dispatch(setName(name.current.value));
-                    dispatch(setText(text.current.value))
-                }}
-            >Cargar datos</p> */}
+        <form className='form' id='form'>
+            {/* IMAGEN */}
+            <label for='img'>Imagen:</label>
+            <input  ref={img} name='img' onChange={handleChange} type='file'></input>
+            {/* NOMBRE */}
+            <label for='name'>Nombre:</label>
+            <input className='form__input' ref={name} onChange={()=> dispatch(setName(name.current.value))} type='text' name='name' placeholder='Inserte su nombre...'></input>
+            {/* CARGO */}
+            <label for='name'>Cargo:</label>
+            <input className='form__input' ref={charge}  onChange={()=> dispatch(setCharge(charge.current.value))} type='text' name='charge' placeholder='Inserte su cargo...'></input>
+            {/* TEXTO */}
+            <label for='name'>Intereses</label>
+            <textarea className='form__input' ref={text} onChange={()=> dispatch(setText(text.current.value))} name='text' placeholder='Inserte sus intereses...'></textarea>
+
         </form>
     );
 }
