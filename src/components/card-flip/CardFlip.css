@@ -1,5 +1,4 @@
 :root {
-
     --dark: #212121;
     --light: #F3F3F3;
 
@@ -69,7 +68,6 @@
   
   .card__face--back {
     background-color: var(--light);
-    /* transform: rotateY(180deg); */
     z-index: 5;
   }
   
@@ -86,7 +84,6 @@
   }
 
   .card__header--point-front {
-    /* margin: auto; */
     background: #FFF;
     width: 10px;
     height: 10px;

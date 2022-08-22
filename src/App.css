@@ -17,7 +17,6 @@ body {
   position: absolute;
   top: 0;
   left: 9px;
-  /* margin-top: -72px; */
   opacity: 0.5;
   font-size: 74px;
   word-spacing: 11px;
@@ -27,9 +26,6 @@ body {
 }
 
 .app__flex {
-  /* display:flex;
-  justify-content: space-around;
-  align-items: center; */
   margin-top: -50px;
 }
 
@@ -40,7 +36,6 @@ body {
     position: absolute;
     top: 0;
     left: 9px;
-    /* margin-top: -72px; */
     opacity: 0.5;
     font-size: 74px;
     word-spacing: 11px;
@@ -51,7 +46,6 @@ body {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: -50px; */
   }
 }
 
