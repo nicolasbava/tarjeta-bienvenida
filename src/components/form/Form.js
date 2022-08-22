@@ -36,7 +36,7 @@ const Form = () => {
            
             {/* TEXT */}
             <label for='name'>Intereses</label>
-            <textarea className='form__input' ref={text} onChange={()=> dispatch(setText(text.current.value))} name='text' placeholder='Inserte sus intereses...'></textarea>
+            <textarea className='form__input form__textarea' ref={text} onChange={()=> dispatch(setText(text.current.value))} name='text' placeholder='Inserte sus intereses...'></textarea>
 
         </form>
     );

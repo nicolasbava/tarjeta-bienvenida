@@ -29,7 +29,7 @@ const ButtonDownload = () => {
     return (
         <div className='container__button'>
             <button onClick={handleCaptureClick}> Descargar Tarjeta </button>
-            <a className='container__button--a' href="/img/these-logo.jpg" target="_blank" download>Descargar contra tarjeta</a>
+            <a className='container__button--a' href="/img/cardBack.png" target="_blank" download>Descargar contra tarjeta</a>
         </div>
     );
 }
