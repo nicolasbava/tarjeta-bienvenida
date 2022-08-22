@@ -4,7 +4,7 @@ import React, { useCallback, useEffect } from 'react';
 import './ButtonDownload.css'
 import downloadjs from 'downloadjs';
 import html2canvas from 'html2canvas';
-// import cardBack from '../../assets/img/cardBack.jpg'
+
 
 const ButtonDownload = () => {
 
@@ -24,12 +24,12 @@ const ButtonDownload = () => {
         const canvas = await html2canvas(card);
         const dataURL = canvas.toDataURL('image/png');
         downloadjs(dataURL, 'card.png', 'image/png');
-        // downloadjs(cardBack, 'cardBack', 'image/png');
     }, []);
 
     return (
-        <div>
+        <div className='container__button'>
             <button onClick={handleCaptureClick}> Descargar Tarjeta </button>
+            <a className='container__button--a' href="/img/these-logo.jpg" target="_blank" download>Descargar contra tarjeta</a>
         </div>
     );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import { useSelector, useDispatch } from 'react-redux'
 
 import Form from './components/form/Form';
 import ButtonDownload from './components/button/ButtonDownload';

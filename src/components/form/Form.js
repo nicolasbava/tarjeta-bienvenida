@@ -24,7 +24,7 @@ const Form = () => {
         <form className='form' id='form'>
             {/* IMAGE */}
             <label for='img'>Imagen:</label>
-            <input className='custom-file-input'  ref={img} name='img' onChange={handleChange} type='file'></input>
+            <input className='form__input--file'  ref={img} name='img' onChange={handleChange} type='file'></input>
            
             {/* NAME */}
             <label for='name'>Nombre:</label>
