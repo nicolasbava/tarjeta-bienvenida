@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux'
 
 const Card = () => {
 
-    // useSelector accede al estado global
-    // Busco cada elemento por su nombre por como fue definido
+    // useSelector to access global state
+    // define every individual state
     const img = useSelector( ( state ) =>  state.counter.img)
     const name = useSelector( ( state ) =>  state.counter.name)
     const text = useSelector( ( state ) =>  state.counter.text)
