@@ -19,12 +19,15 @@ export const counterSlice = createSlice({
         setName: function(state, action){
             state.name = action.payload
         },
+
         setCharge: function(state, action){
             state.charge = action.payload
         },
+
         setText: function(state,action){
             state.text = action.payload
         },
+        
         setImage: function(state,action){
             state.img = action.payload
         }

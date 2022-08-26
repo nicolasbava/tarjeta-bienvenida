@@ -28,7 +28,7 @@ const Form = () => {
            
             {/* NAME */}
             <label for='name'>Nombre:</label>
-            <input className='form__input' ref={name} onChange={()=> dispatch(setName(name.current.value))} type='text' name='name' placeholder='Inserte su nombre...'></input>
+            <input className='form__input' onChange={()=> dispatch(setName(name.current.value))} ref={name} type='text' name='name' placeholder='Inserte su nombre...'></input>
            
             {/* CHARGE */}
             <label for='name'>Cargo:</label>
