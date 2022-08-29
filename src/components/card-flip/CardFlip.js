@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux'
-import image from '../../../public/img/these-logo.jpg'
+import image from '../../assets/img/these-logo.jpg'
+import user from '../../assets/img/user.png'
 import './CardFlip.css'
 
 
@@ -41,7 +42,7 @@ const CardFlip = () => {
                         <div id='card__download' className="card__content" >
                             <div className="card__header">
                                 <div className="card__header--point-back"></div>
-                                <img src={img} alt="" className="pp" />
+                                <img src={img === '' ? user : img} alt="" className="pp" />
                                 <h2>{name}</h2>
                             </div>
                             <div className="card__body">

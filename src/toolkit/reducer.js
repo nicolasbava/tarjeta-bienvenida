@@ -1,12 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit"
 
+
 // creo el estado inicial y las props
 const initialState = {
     value: 1,
     name: 'Nombre',
     charge: 'Cargo',
     text: 'Intereses personales',
-    img: '/img/these-logo.jpg'
+    img: '',
 }
 
 
