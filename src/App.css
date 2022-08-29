@@ -18,11 +18,15 @@ body {
   top: 0;
   left: 9px;
   opacity: 0.5;
-  font-size: 74px;
+  font-size: 60px;
   word-spacing: 11px;
   letter-spacing: 4px;
   text-align: left;
-  line-height: 1;
+  line-height: 1.1;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #fff;
+  /* word-break: break-all; */
 }
 
 .app__flex {
@@ -37,7 +41,7 @@ body {
     top: 0;
     left: 9px;
     opacity: 0.5;
-    font-size: 74px;
+    font-size: 101px;
     word-spacing: 11px;
     letter-spacing: 4px;
   }
