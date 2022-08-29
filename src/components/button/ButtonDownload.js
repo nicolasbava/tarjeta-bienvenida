@@ -4,7 +4,7 @@ import React, { useCallback, useEffect } from 'react';
 import './ButtonDownload.css'
 import downloadjs from 'downloadjs';
 import html2canvas from 'html2canvas';
-import back from '../../assets/img/user.png'
+import back from '../../assets/img/cardBack.png'
 
 
 
