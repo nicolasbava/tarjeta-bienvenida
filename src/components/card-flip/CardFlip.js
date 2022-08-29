@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux'
+import image from '../../../public/img/these-logo.jpg'
 import './CardFlip.css'
 
 
@@ -11,11 +12,6 @@ const CardFlip = () => {
     const charge = useSelector( ( state ) =>  state.counter.charge)
     const text = useSelector( ( state ) =>  state.counter.text)
 
-    // let cardFlip = useRef()
-   
-    // const flip = function (e) {
-    //     cardFlip.classList.toggle('is-flipped');
-    // }
 
     useEffect(() => {
         const card = document.querySelector(".card__inner");
@@ -38,7 +34,7 @@ const CardFlip = () => {
 		        <div className="card__inner">
                     <div className="card__face card__face--front" >
                         <div className="card__header--point-front"></div>
-                        <img src='/img/these-logo.jpg' alt="" className="pp" />
+                        <img src={image} alt="" className="pp" />
                         <h2>THESE</h2>
                     </div>
                     <div className="card__face card__face--back" >
